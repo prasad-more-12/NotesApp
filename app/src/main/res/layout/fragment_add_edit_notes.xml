@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_yellow"
+    tools:context=".ui.notes.AddEditNotesFragment">
+
+    <EditText
+        android:id="@+id/idEdtNoteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_note_title"
+        android:textColor="@color/text_color2"
+        android:textColorHint="@color/text_color2" />
+
+    <!--edit text for note description-->
+    <EditText
+        android:id="@+id/idEdtNoteDesc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idBtn"
+        android:layout_below="@id/idEdtNoteName"
+        android:layout_margin="10dp"
+        android:background="@color/light_yellow"
+        android:gravity="start|top"
+        android:hint="Enter your Note Details"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/text_color2"
+        android:textColorHint="@color/text_color2" />
+
+    <!--button for saving and updating a note-->
+    <Button
+        android:id="@+id/idBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
